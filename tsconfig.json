@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@Services/*": [
+        "src/services/*"
+      ],
+      "@Auth/*": [
+        "src/auth/*"
+      ],
+      "@Models/*": [
+        "src/shared/models/*"
+      ],
+      "@SdkServices/*": [
+        "src/shared/sdk-services/*"
+      ],
+      "@Utils/*": [
+        "src/shared/utils/*"
+      ],
+      "@Decorators/*": [
+        "src/shared/decorators/*"
+      ],
+      "@app/redis": [
+        "libs/redis/src"
+      ],
+      "@app/redis/*": [
+        "libs/redis/src/*"
+      ],
+      "@app/bcrypt": [
+        "libs/bcrypt/src"
+      ],
+      "@app/bcrypt/*": [
+        "libs/bcrypt/src/*"
+      ]
+    }
+  }
+}

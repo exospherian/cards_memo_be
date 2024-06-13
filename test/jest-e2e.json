@@ -1,0 +1,33 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/../src/$1",
+    "^@Services/(.*)$": "<rootDir>/../src/services/$1",
+    "^@Auth/(.*)$": [
+      "<rootDir>/../src/auth/*"
+    ],
+    "^@Models/(.*)$": [
+      "<rootDir>/../src/shared/models/*"
+    ],
+    "^@SdkServices/(.*)$": [
+      "<rootDir>/../src/shared/sdk-services/*"
+    ],
+    "^@Utils/(.*)$": [
+      "s<rootDir>/../src/shared/utils/*"
+    ],
+    "@app/redis/(.*)": "<rootDir>/../libs/redis/src/$1",
+    "@app/redis": "<rootDir>/../libs/redis/src",
+    "@app/bcrypt/(.*)": "<rootDir>/../libs/bcrypt/src/$1",
+    "@app/bcrypt": "<rootDir>/../libs/bcrypt/src"
+  }
+}
